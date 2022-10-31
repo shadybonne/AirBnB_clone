@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """ AirBnB Console """
 
 
@@ -18,7 +20,9 @@ from models.review import Review
 
 class HBNBCommand(cmd.Cmd):
     """ General Class for HBNBCommand """
+
     prompt = '(hbnb) '
+    
     classes = {'BaseModel': BaseModel, 'User': User, 'City': City,
                'Place': Place, 'Amenity': Amenity, 'Review': Review,
                'State': State}
